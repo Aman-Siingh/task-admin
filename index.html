@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">TASKMANAGER</h1>
+        <div class="task-allotment">
+            <label for="task-input">Task Allotment:</label>
+            <input type="textarea" id="task-input" placeholder="Enter task here...">
+            <select id="team-dropdown">
+                <option value="" disabled selected>Team Name</option>
+                <option value="TeamXYZ">TeamXYZ</option>
+                <option value="TeamABC">TeamABC</option>
+                <!-- Add more options as needed -->
+            </select>
+            <button id="submit-btn">Submit</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Team Name</th>
+                    <th>Task allotted</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="task-table-body">
+                <!-- Rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
